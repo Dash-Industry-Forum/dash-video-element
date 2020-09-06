@@ -4,6 +4,8 @@ A custom element (web component) for playing DASH (Dynamic Adaptive Streaming ov
 
 The element API matches the HTML5 `<video>` tag, so it can be easily swapped with other media, and be compatible with other UI components that work with the video tag.
 
+Built with [dash.js](https://github.com/Dash-Industry-Forum/dash.js).
+
 ## Example
 
 ```html
