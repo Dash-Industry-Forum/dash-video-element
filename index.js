@@ -1,8 +1,8 @@
 import CustomVideoElement from 'custom-video-element';
+
+// This doesn't work currently because of dependency issues in dash.js
+// Instead we're just concatenating dash.js into the file and adding to the window.
 // import * as dashjs from 'dashjs';
-// import stream from 'stream';
-// import * as readableStream from 'readable-stream';
-// import dashjs from './node_modules/dashjs/index_mediaplayerOnly.js';
 
 class DASHVideoElement extends CustomVideoElement {
   constructor() {
@@ -25,7 +25,6 @@ class DASHVideoElement extends CustomVideoElement {
   }
 
   load() {
-    console.log('here', window.dashjs);
     this.dashPlayer = window.dashjs.MediaPlayer().create();
     this.dashPlayer.initialize(this.nativeEl, this.src, true);
   }
