@@ -1,6 +1,6 @@
 {
   "name": "dash-video-element",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A custom element (web component) for playing DASH (Dynamic Adaptive Streaming over HTTP) videos. Uses dash.js.",
   "type": "module",
   "main": "dist/dash-video-element.js",
