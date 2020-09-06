@@ -1,0 +1,42 @@
+{
+  "name": "dash-video-element",
+  "version": "0.0.1",
+  "description": "A custom element (web component) for playing DASH (Dynamic Adaptive Streaming over HTTP) videos. Uses dash.js.",
+  "type": "module",
+  "main": "dist/dash-video-element.js",
+  "files": [
+    "./dist/*",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "rm -rf dist && rollup --config && cat node_modules/dashjs/dist/dash.all.min.js >> /tmp/dashtemp && echo '\n' >> /tmp/dashtemp && cat dist/dash-video-element.js >> /tmp/dashtemp && mv -f /tmp/dashtemp dist/dash-video-element.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "publish-patch": "yarn run build && np patch --no-tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/muxinc/dash-video-element.git"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  },
+  "keywords": [
+    "DASH",
+    "video",
+    "player"
+  ],
+  "author": "@muxinc",
+  "license": "MIT",
+  "dependencies": {
+    "custom-video-element": "^0.0.1",
+    "dashjs": "^3.1.2"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^11.0.2",
+    "@rollup/plugin-node-resolve": "^7.1.1",
+    "np": "^6.2.0",
+    "rollup": "^2.2.0",
+    "rollup-plugin-babel-minify": "^10.0.0",
+    "rollup-plugin-terser": "^5.3.0"
+  }
+}
