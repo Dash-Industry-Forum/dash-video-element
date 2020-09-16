@@ -6,7 +6,7 @@ The element API matches the HTML5 `<video>` tag, so it can be easily swapped wit
 
 Built with [dash.js](https://github.com/Dash-Industry-Forum/dash.js).
 
-Originally developed by [Mux](https://mux.com).
+Originally developed by [Mux](https://mux.com). Thanks to Steve Heffernan for the original work and contribution. 
 
 ## Example
 
