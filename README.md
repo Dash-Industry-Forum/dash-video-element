@@ -13,7 +13,7 @@ Originally developed by [Mux](https://mux.com). Thanks to Steve Heffernan for th
 ```html
 <html>
 <head>
-  <script type="module" src="https://unpkg.com/dash-video-element"></script>
+  <script type="module" src="https://unpkg.com/dash-video-element@0"></script>
 </head>
 <body>
 
@@ -35,7 +35,7 @@ Note the `type="module"`, that's important.
 
 ```html
 <head>
-  <script type="module" src="https://unpkg.com/dash-video-element"></script>
+  <script type="module" src="https://unpkg.com/dash-video-element@0"></script>
 </head>
 ```
 
